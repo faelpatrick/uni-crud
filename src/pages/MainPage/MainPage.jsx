@@ -1,28 +1,13 @@
 import React from "react";
-import "./style.css";
+import "./styles.css";
 import logo01 from "./../../images/logo01.png";
 import logo02 from "./../../images/logo02.png";
+import MenuBar from "../MenuBar/MenuBar";
 
 const MainPage = () => {
     return (
         <div id="all-content">
-            <nav id="sideBar">
-                <div id="logoSideBar">
-                    <img src={logo01} alt="logo01" />
-                </div>
-
-                <div id="logoSideBar">
-                    <img src={logo02} alt="logo02" />
-                </div>
-
-                <ul>
-                    <li>Cursos</li>
-                    <li>Disciplinas</li>
-                    <li>Professores</li>
-                    <li>Alunos</li>
-                </ul>
-
-            </nav>
+            <MenuBar />
 
             <div id="content" >
                 <h1> Bem Vindo!</h1>

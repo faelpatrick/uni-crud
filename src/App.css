@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  --color0: #FFFFFF;
+  --color1: #D9D9D9;
+  --color2: #8A898A;
+  --color3: #C71F25;
+  --color4: #4785EB;
+  --color5: #27AE60;
+}
+
 .App {
   text-align: center;
 }

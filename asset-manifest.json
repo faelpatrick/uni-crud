@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/uni-crud/static/css/main.9af950e5.css",
-    "main.js": "/uni-crud/static/js/main.cefede02.js",
+    "main.js": "/uni-crud/static/js/main.7f54ef1c.js",
     "static/js/787.b486c154.chunk.js": "/uni-crud/static/js/787.b486c154.chunk.js",
     "index.html": "/uni-crud/index.html",
     "main.9af950e5.css.map": "/uni-crud/static/css/main.9af950e5.css.map",
-    "main.cefede02.js.map": "/uni-crud/static/js/main.cefede02.js.map",
+    "main.7f54ef1c.js.map": "/uni-crud/static/js/main.7f54ef1c.js.map",
     "787.b486c154.chunk.js.map": "/uni-crud/static/js/787.b486c154.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9af950e5.css",
-    "static/js/main.cefede02.js"
+    "static/js/main.7f54ef1c.js"
   ]
 }

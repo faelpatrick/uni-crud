@@ -19,6 +19,7 @@ const AppRoutes = () => {
         <Router>
             <Routes>
                 <Route path="/" exact element={<MainPage />} />
+                <Route path="/uni-crud" exact element={<MainPage />} />
                 <Route path="/cursos" exact element={<CoursesPage />} />
                 <Route path="/uni-crud/cursos" exact element={<CoursesPage />} />
                 <Route path="/disciplinas" exact element={<DisciplinasPage />} />

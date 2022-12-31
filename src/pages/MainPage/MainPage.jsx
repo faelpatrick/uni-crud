@@ -33,7 +33,7 @@ const MainPage = () => {
                     <li onClick={loadPageCourse}>Cursos</li>
                     <li onClick={loadPageSubject}>Disciplinas</li>
                     <li onClick={loadPageProffessor}>Professores</li >
-                    <li onClick={loadPageStudant}>Alunos123</li >
+                    <li onClick={loadPageStudant}>Alunos</li >
                 </ul >
 
             </nav >

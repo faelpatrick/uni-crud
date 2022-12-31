@@ -2,9 +2,26 @@ import React from "react";
 
 const DisciplinasPage = () => {
     return (
-        <div>
-            <h1>Disciplinas</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi, repellat maiores veritatis esse aspernatur. Totam, voluptatum laborum nostrum porro laudantium perspiciatis mollitia asperiores, quibusdam cum corrupti exercitationem repellendus quam!</p>
+        <div id="alunos">
+            <div id="content_header">
+                <div className="content_title"><h1>Disciplinas</h1></div>
+                <div className="content_options">
+                    <span>+ Novo</span>
+                </div>
+            </div>
+            <div>
+                <table id="cards" className="cards">
+                    <thead>
+                        <tr id="card-titles" className="card-titles">
+                            <th>Nome da Disciplina</th>
+                            <th>Curso</th>
+                            <th>Semestre</th>
+                        </tr>
+                    </thead>
+                    <tbody> </tbody>
+                </table>
+
+            </div>
         </div>
     )
 }

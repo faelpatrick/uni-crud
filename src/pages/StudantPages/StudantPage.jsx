@@ -2,9 +2,21 @@ import React from "react";
 
 const StudantPage = () => {
     return (
-        <div>
+        <div id="alunos">
             <h1>Alunos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi, repellat maiores veritatis esse aspernatur. Totam, voluptatum laborum nostrum porro laudantium perspiciatis mollitia asperiores, quibusdam cum corrupti exercitationem repellendus quam!</p>
+            <div>
+                <table id="cards" className="cards">
+                    <thead>
+                        <tr id="card-titles" className="card-titles">
+                            <td className="table_td_name"> Nome do Professor(a)</td>
+                            <td className="table_td_birth"> Data Nasc.</td>
+                            <td className="table_td_sal"> Salario</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
         </div>
     )
 }

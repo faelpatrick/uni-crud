@@ -9,7 +9,7 @@ const MainPage = () => {
         <div id="all-content">
             <MenuBar />
 
-            <div id="content" >
+            <div id="content" className="content">
                 <h1> Bem Vindo!</h1>
                 <h1> Escolha a opção desejanda no menu lateral esquerdo!</h1>
             </div>

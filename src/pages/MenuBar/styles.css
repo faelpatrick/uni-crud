@@ -13,7 +13,7 @@
 
 #sideBar {
     
-    display: fixed;
+    position: fixed;
     background-color: var(--color3);
     min-width: 160px;
     width: 16%;
@@ -36,7 +36,16 @@
 
 #sideBar a {
     text-decoration: none;
+    color: var(--color0);
 }
+
+#sideBar a:hover
+,   #sideBar li:hover a
+,   #sideBar li a:hover {
+    text-decoration: none;
+    color: var(--color3) !important;
+}
+
 #sideBar ul li {
     padding: 10px 0;
     height: 20px;

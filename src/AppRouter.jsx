@@ -1,7 +1,8 @@
 import React from "react";
 
 import {
-    BrowserRouter as Router,
+    // BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Routes
 } from "react-router-dom";
@@ -28,16 +29,16 @@ const AppRoutes = () => {
         //     </Routes>
         // </Router>
 
-           <Router>
+        <Router>
             <Routes>
-                <Route  path="/"  element={<MainPage />} />
-                <Route  path="/uni-crud"  element={<MainPage />} />
-                <Route  path="/cursos"  element={<CoursesPage />} />
-                <Route  path="/uni-crud/#/cursos"  element={<CoursesPage />} />
-                <Route  path="/disciplinas"  element={<DisciplinasPage />} />
-                <Route  path="/professores"  element={<ProfessorPage />} />
-                <Route  path="/alunos"  element={<StudantPage />} />
-                <Route  path="/login" element={<LoginPage />} />
+                <Route path="/" element={<MainPage />} />
+                <Route path="/uni-crud" element={<MainPage />} />
+                <Route path="/cursos" element={<CoursesPage />} />
+                <Route path="/uni-crud/#/cursos" element={<CoursesPage />} />
+                <Route path="/disciplinas" element={<DisciplinasPage />} />
+                <Route path="/professores" element={<ProfessorPage />} />
+                <Route path="/alunos" element={<StudantPage />} />
+                <Route path="/login" element={<LoginPage />} />
             </Routes>
         </Router>
     );

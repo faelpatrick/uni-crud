@@ -4,6 +4,7 @@ import "./styles.css";
 import logo01 from "../../images/logo01.png";
 import logo02 from "../../images/logo02.png";
 
+import LoginPage from "../LoginPage/Login";
 import CoursesPage from "../CoursePages/CoursesPage";
 import DisciplinasPage from "../DisciplinePages/DisciplinasPage";
 import ProfessorPage from "../ProfessorPages/ProfessorPage";
@@ -12,7 +13,8 @@ import WelcomePage from "../WelcomePage/WelcomePage";
 
 const MainPage = () => {
 
-    const [handleContent, setContent] = useState(<WelcomePage />)
+    const [handleContent, setContent] = useState(<LoginPage />)
+
     const loadPageCourse = () => { setContent(<CoursesPage />) }
     const loadPageSubject = () => { setContent(<DisciplinasPage />) }
     const loadPageProffessor = () => { setContent(<ProfessorPage />) }

@@ -6,7 +6,7 @@ import {
     Routes
 } from "react-router-dom";
 
-import LoginPage from "./pages/Login";
+import LoginPage from "./pages/LoginPage/Login";
 import MainPage from "./pages/MainPage/MainPage";
 import CoursesPage from './pages/CoursePages/CoursesPage';
 import DisciplinasPage from "./pages/DisciplinePages/DisciplinasPage";
@@ -24,7 +24,8 @@ const AppRoutes = () => {
                 <Route  path="/disciplinas" exact element={<DisciplinasPage />} />
                 <Route  path="/professores" exact element={<ProfessorPage />} />
                 <Route  path="/alunos" exact element={<StudantPage />} />
-                <Route exact path="/login" element={<LoginPage />} />
+                <Route  path="/login" exact element={<LoginPage />} />
+                <Route  path="/uni-crud/login" exact element={<LoginPage />} />
             </Routes>
         </Router>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 
 const CoursesPage = () => {
-    return (
+     return (
         <div id="cursos">
             <h1>Cursos</h1>
             <h1>Lista de Cursos</h1>

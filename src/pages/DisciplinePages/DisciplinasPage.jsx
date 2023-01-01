@@ -18,7 +18,6 @@ const DisciplinasPage = () => {
                             <th>Semestre</th>
                         </tr>
                     </thead>
-                    <tbody> </tbody>
                 </table>
 
             </div>

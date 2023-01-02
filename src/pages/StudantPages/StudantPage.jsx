@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getStudants } from "../../services/api";
 
 const StudantPage = () => {
+
+    const [studants, setStudants] = useState([]);
+
+    const loadData = async () => {
+        const response = await getStudants();
+        setStudants(response.data.studants);
+    }
+
+    useEffect(() => {
+        (async () => { loadData() })();
+    });
+
     return (
         <div id="alunos">
             <h1>Alunos</h1>
@@ -13,7 +26,15 @@ const StudantPage = () => {
                             <td className="table_td_sal"> Salario</td>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                        {studants.map((studant) => (
+                            <tr key={studant._id}>
+                                <td>{studant.name}</td>
+                                <td>{studant.birth}</td>
+                                <td>{studant.registry}</td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </table>
 
             </div>

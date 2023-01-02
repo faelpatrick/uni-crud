@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./styles.css";
 
-const LoginPage = () => {
+
+const LoginPage = () => {   
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

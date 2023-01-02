@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getProfessors } from "../../services/api";
 
 const ProfessorPage = () => {
+    const [professors, setProfessors] = useState([]);
+
+    const loadData = async () => {
+        const response = await getProfessors();
+        setProfessors(response.data.professors);
+    }
+
+    useEffect(() => {
+        (async () => await loadData())();
+    });
+
     return (
         <div id="professores">
             <h1>Professores</h1>
@@ -13,7 +25,17 @@ const ProfessorPage = () => {
                         <th className="table_td_sal">Salario</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                    {
+                        professors.map((professor) => (
+                            <tr key={professor._id}>
+                                <td>{professor.name}</td>
+                                <td>{professor.birth}</td>
+                                <td>{professor.salary}</td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
             </table>
         </div>
     )

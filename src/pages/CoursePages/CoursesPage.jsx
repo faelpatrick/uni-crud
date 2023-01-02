@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getCourses } from "../../services/api.js"
 
 const CoursesPage = () => {
-     return (
+
+    const [courses, setCourses] = useState([]);
+
+    const loadData = async () => {
+        const response = await getCourses();
+        setCourses(response.data.courses);
+    }
+
+    useEffect(() => {
+        (async () => await loadData())();
+    }, []);
+
+    return (
         <div id="cursos">
-            <h1>Cursos</h1>
             <h1>Lista de Cursos</h1>
+            <div className="content_options">
+                <span>+ Novo</span>
+            </div>
 
             <table id="cards" className="cards">
                 <thead>
@@ -13,6 +28,13 @@ const CoursesPage = () => {
                         <td className="table_td_birth">Funções</td>
                     </tr>
                 </thead>
+                <tbody>
+                    {
+                        courses.map((course) => (
+                            <tr key={course._id}><td>{course.name}</td><td>Acessar | Editar</td></tr>
+                        ))}
+                </tbody>
+
                 <tbody></tbody>
             </table>
         </div>

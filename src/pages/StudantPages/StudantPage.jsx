@@ -23,7 +23,7 @@ const StudantPage = () => {
                         <tr id="card-titles" className="card-titles">
                             <td className="table_td_name"> Nome do Professor(a)</td>
                             <td className="table_td_birth"> Data Nasc.</td>
-                            <td className="table_td_sal"> Salario</td>
+                            <td className="table_td_registry"> Reg.Acad.</td>
                         </tr>
                     </thead>
                     <tbody>
